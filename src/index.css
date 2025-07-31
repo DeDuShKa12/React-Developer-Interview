@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply box-border;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+@layer utilities {
+  .bg-primary {
+    background-color: var(--color-primary);
+  }
+  .text-primary {
+    color: var(--color-primary);
+  }
+  .bg-success {
+    background-color: var(--color-success);
+  }
+  .text-success {
+    color: var(--color-success);
+  }
+  .bg-danger {
+    background-color: var(--color-danger);
+  }
+  .text-danger {
+    color: var(--color-danger);
+  }
+  .bg-base {
+    background-color: var(--color-bg);
+  }
+  .text-base {
+    color: var(--color-text);
+  }
+}
+
+:root {
+  --color-primary: #1da1f2;
+  --color-success: #22c55e;
+  --color-danger: #ef4444;
+  --color-bg: #ffffff;
+  --color-bg-input: #f9fafb;
+  --color-text: #000000;
+}
+
+.dark {
+  --color-primary: #0c88d9;
+  --color-success: #15803d;
+  --color-danger: #dc2626;
+  --color-bg: #0f172a;
+  --color-bg-input: #1e293b;
+  --color-text: #ffffff;
+}
